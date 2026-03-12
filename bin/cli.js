@@ -16,7 +16,7 @@ const DEFAULT_OUTPUT = "locales/en.json";
 program
   .name("gstrings")
   .description("Extract translation strings from Ghost theme .hbs files and write locales/en.json")
-  .version("0.0.1")
+  .version("0.0.2")
   .argument("[themeDir]", "theme directory to scan (default: current directory)", ".")
   .option("-o, --output <path>", "output path for locale JSON (default: locales/en.json)")
   .option("--locale <name>", "locale name used when output is inferred (default: en)", DEFAULT_LOCALE)
