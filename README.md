@@ -55,7 +55,7 @@ Only the **first argument** of `{{t}}` or `(t)` is used as the translation key; 
 
 ## Output format
 
-The generated `locales/en.json` is a flat JSON object: each key is the extracted string, and the value is the same (English fallback). Keys are sorted alphabetically. Example:
+The generated `locales/en.json` is a flat JSON object: each key is the extracted string, and the value is the same (English fallback). Keys appear in the order they are discovered while scanning the theme. Example:
 
 ```json
 {

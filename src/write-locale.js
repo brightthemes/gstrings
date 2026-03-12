@@ -6,7 +6,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { dirname } from "path";
 
 /**
- * Build a sorted locale object: key -> value (value = key for new keys, or existing value when merging).
+ * Build a locale object: key -> value (value = key for new keys, or existing value when merging).
  * @param {Set<string>} keys - Extracted translation keys
  * @param {Record<string, string> | null} existing - Existing key-value map (e.g. from en.json) or null
  * @param {boolean} merge - If true and existing is set, keep existing values for existing keys
@@ -14,7 +14,7 @@ import { dirname } from "path";
  */
 export function buildLocaleObject(keys, existing = null, merge = true) {
   const out = {};
-  const keyList = [...keys].sort();
+  const keyList = [...keys];
   for (const key of keyList) {
     if (merge && existing && existing[key] !== undefined) {
       out[key] = existing[key];

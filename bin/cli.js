@@ -49,8 +49,7 @@ program
         console.log("Output path:", outputPath);
         console.log("Extracted keys:", keys.size);
       }
-      const keyList = [...keys].sort();
-      for (const k of keyList) {
+      for (const k of keys) {
         console.log(k);
       }
       return;

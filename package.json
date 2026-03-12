@@ -1,5 +1,5 @@
 {
-  "name": "gstrings",
+  "name": "ghost-theme-strings",
   "version": "0.0.1",
   "description": "CLI tool to extract translation strings from Ghost themes",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "node": ">=22"
   },
   "bin": {
-    "gstrings": "./bin/cli.js"
+    "gstrings": "bin/cli.js"
   },
   "files": [
     "bin",
